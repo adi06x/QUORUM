@@ -1,0 +1,22 @@
+flowchart LR
+    User["User Question"] --> UI["React + Vite + Tailwind UI"]
+    UI -->|POST /api/query| API["FastAPI API"]
+    UI -->|Poll status/result| API
+    API --> Repo["SQLite Query Repository"]
+    API --> Graph["LangGraph Council Workflow"]
+    Graph --> Chair["Chair Agent"]
+    Chair --> Scout["Scout Agent"]
+    Scout --> Sources["Semantic Scholar + arXiv"]
+    Scout --> Chroma["ChromaDB Evidence Store"]
+    Chroma --> Reader["Reader Agent"]
+    Sources --> Reader
+    Reader --> Critic["Critic Agent"]
+    Critic --> Synth["Synthesizer Agent"]
+    Synth --> Gate{"Confidence >= Threshold?"}
+    Gate -->|No| Retry["Visible Retry Event"]
+    Retry --> Chair
+    Gate -->|Yes| Verdict["Final Verdict Package"]
+    Verdict --> Repo
+    Repo --> API
+    API --> UI
+

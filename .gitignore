@@ -1,0 +1,11 @@
+.env
+__pycache__/
+.pytest_cache/
+.DS_Store
+backend/.venv/
+node_modules/
+dist/
+coverage/
+backend/data/
+frontend/dist/
+*.tsbuildinfo
