@@ -1,5 +1,11 @@
 # QUORUM — AI Research Council
 
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)
+![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-orange)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 > **Don't ask a chatbot. Convene a council.**
 
 QUORUM is an autonomous multi-agent research system that dispatches seven specialized AI agents to investigate a research question, autonomously retries when confidence is insufficient, and delivers a structured committee verdict with citations, contradiction analysis, and research gap identification.
