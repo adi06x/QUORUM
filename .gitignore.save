@@ -8,6 +8,4 @@ dist/
 coverage/
 backend/data/
 frontend/dist/
-backend/venv/
 *.tsbuildinfo
-
